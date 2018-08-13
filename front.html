@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<title>IDS Project | Welcomes</title>
+		<meta charset="utf-8">
+	</title>
+
+<style>
+	mark{
+		background-color: #e2e2e2;
+	}	
+body,html {
+	  background-color: #f9f9f9;
+	  font-family: arial, sans-serif;
+	   }
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.button_1{
+	height:38px;
+	background:#ffab7c;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+.highlight{
+	color: #e8491d;
+	font-weight: bold;
+}
+.dark{
+	padding: 15px;
+	background:#35424a;
+	color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+/*Header*/
+header{
+	background: #83aeaa;
+	color: #ffffff;
+	padding-top: 10px;
+	min-height: 50px;
+	border-bottom: white 1px solid;
+	border-top: white 1px solid;
+	/*box-shadow: 1px 1px 40px black;*/
+}
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+header #branding{
+	float: left;
+}
+header #branding h1{
+	margin: 0;
+}
+header nav{
+	float: right;
+	padding-top: 10px;
+}
+header nav:hover{
+	
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav {
+    background: #DAC18D;
+    height: 60px;
+    display: inline-block;
+}
+ 
+.nav li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+.nav li a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    line-height: 60px;
+    padding: 0 26px;
+    text-decoration: none;
+    border-left: 1px solid #2e2e2e;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.nav li a:hover {
+    background-color: #CEB47F;
+}
+ 
+#settings a {
+    padding: 18px;
+    height: 24px;
+    font-size: 10px;
+    line-height: 24px;
+}
+
+#search {
+    width: 357px;
+    margin: 4px;
+}
+#search_text{
+    width: 340px;
+    padding: 30px 30px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    height: 52px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: #CEB47F;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.15s;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+#search_text:focus {
+    background: #CEB47F;
+}
+#search_button {
+    border: 0 none;
+    background: #CEB47F url(search.png) center no-repeat;
+    background-size: 35% 35%;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 60px;
+    cursor: pointer;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+#options a{
+	border-left: 0px solid white;
+	border-right: 1px solid white; 
+}
+
+.subnav {
+    visibility: hidden;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transition: all 0.1s;
+    background: #DAC18D;
+}
+.subnav li {
+    float: none;
+}
+.subnav li a {
+    border-bottom: 1px solid #DAC18D;
+}
+#options:hover .subnav {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+.clearfix{
+	overflow:show;
+}
+
+.clearfix::after{
+	clear:both;
+	content:" ";
+	display:table;
+}
+
+
+
+</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight"></span>DVAAR</h1>				
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="#">Home</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	
+
+
+<div >
+	<div style="margin:50px auto 40px auto;text-align:center">
+		<div style="padding:50px auto 40px auto;text-align:center;display:inline-block">
+			<div  class="clearfix">
+
+        		<form action="result.php" method="post" >
+        			
+	        		<div style="float:left">
+	        			<input type="text" name="search_text" id="search_text" placeholder="Search anything"/>
+	            		<button type="submit" name="search_button" id="search_button"> </button>
+	            	</div>
+	        	</form>
+	        </div>
+            <div style="padding:10px">
+            	
+            </div>	
+        </div>
+		</div>	
+	</div>
+</div>
+
+</body>
+</html>

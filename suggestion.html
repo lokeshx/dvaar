@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Scroll</title>
+    <style type="text/css">
+
+    <style>
+        
+mark{
+        background-color: #e2e2e2;
+    }   
+body,html {
+      background-color: #f9f9f9;
+      font-family: arial, sans-serif;
+       }
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.button_1{
+    height:38px;
+    background:#ffab7c;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+.highlight{
+    color: #e8491d;
+    font-weight: bold;
+}
+.dark{
+    padding: 15px;
+    background:#35424a;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+/*Header*/
+header{
+    background: #83aeaa;
+    color: #ffffff;
+    padding-top: 10px;
+    min-height: 50px;
+    border-bottom: white 1px solid;
+    border-top: white 1px solid;
+    /*box-shadow: 1px 1px 40px black;*/
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    padding-top: 10px;
+}
+header nav:hover{
+    
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+.profile-card{
+    background: #FEFEFE;
+    border:1px solid #f9f9f9;
+    border-radius:4px;
+    margin-top:45px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.card-image{
+    height:300px;
+    width:50px;
+    padding:10px 5px;
+}
+.card-text{
+    text-align: initial;
+    width:500px;
+    height:auto;
+    padding:10px 10px;
+    float:left;
+}
+
+.card-text h2{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    margin-top: -70px;
+    margin-left: 65px;
+}
+
+.clearfix{
+    overflow:show;
+}
+
+.clearfix::after{
+    clear:both;
+    content:" ";
+    display:table;
+}
+
+.profile-pic{
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+
+
+/*.scroll-text h1{
+    font-size: 5px;
+    height: auto;
+}
+*/
+
+.suggestion{
+    width: 290px;
+    height: 180px;
+    background-color:#83aeaa;
+    position: fixed;
+    bottom: 75px;
+}
+
+.suggestion h2 {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 45px;
+}
+
+
+        .scrolly{
+
+            position: fixed;
+            bottom: 5px;
+            width: 1220px;
+            height: 270px;
+            left: 19%;
+            overflow: auto;
+            overflow-y: hidden;
+            margin: 0 auto;
+            white-space: nowrap
+        }
+
+        img{
+            width: 180px;
+            height: 180px;
+            margin: 20px 10px;
+            display: inline;
+
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight"></span>VIDWAAN</h1>             
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+                <div class="profile-card clearfix">
+                    <div class="card-image">
+                        <img src="https://www.iitk.ac.in/new/images/faculty-images/Aerospace/a-k-ghosh.jpg" class="profile-pic">
+                    </div>
+                    <div class="card-text">
+                        <h2><strong>AK GHOSH</strong>
+                        </h2>
+                    </div>
+                </div>
+
+
+
+
+                <div class="suggestion">
+                    <h2>Similar Suggestions</h2>
+                </div>
+    <div class="scrolly">
+        
+        <img src='https://www.iitk.ac.in/new/images/faculty-images/Aerospace/a-k-ghosh.jpg'></img>
+        <img src='https://www.iitk.ac.in/new/images/faculty-images/Aerospace/a-k-ghosh.jpg'></img>
+        <img src='https://www.iitk.ac.in/new/images/faculty-images/Aerospace/a-k-ghosh.jpg'></img>
+        <img src='https://www.iitk.ac.in/new/images/faculty-images/Aerospace/a-k-ghosh.jpg'></img>
+        <img src='https://www.iitk.ac.in/new/images/faculty-images/Aerospace/a-k-ghosh.jpg'></img>
+        <img src='https://www.iitk.ac.in/new/images/faculty-images/Aerospace/a-k-ghosh.jpg'></img>
+
+
+    </div>
+</body>
+</html>
